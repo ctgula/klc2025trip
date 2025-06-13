@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, ReactNode } from &apos;react';
+import { useState, ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface TabProps {
@@ -25,8 +25,8 @@ const TabComponent = ({ tabs, defaultTab = 0 }: TabsProps) => {
             onClick={() => setActiveTab(index)}
             className={`py-3 px-4 sm:px-6 font-medium text-sm md:text-base transition-colors whitespace-nowrap relative flex-shrink-0 ${
               activeTab === index
-                ? &apos;text-blue-600'
-                : &apos;text-gray-500 hover:text-gray-700'
+                ? 'text-blue-600'
+                : 'text-gray-500 hover:text-gray-700'
             }`}
           >
             {tab.title}
@@ -34,7 +34,7 @@ const TabComponent = ({ tabs, defaultTab = 0 }: TabsProps) => {
               <motion.div 
                 className="absolute bottom-0 left-0 right-0 h-0.5 sm:h-1 bg-blue-600 rounded-t-full"
                 layoutId="activeTabIndicator"
-                transition={{ type: &apos;spring', stiffness: 300, damping: 30 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               />
             )}
           </button>

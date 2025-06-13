@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from &apos;react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaEnvelope, 
@@ -8,7 +8,7 @@ import {
   FaQuestionCircle, 
   FaExclamationTriangle,
   FaUserFriends
-} from &apos;react-icons/fa';
+} from 'react-icons/fa';
 import AccordionItem from '../../components/AccordionItem';
 
 const ContactPage = () => {
@@ -24,7 +24,7 @@ const ContactPage = () => {
     },
     {
       question: "Is lunch included in the trip cost?",
-      answer: "Yes, lunch at Miller&apos;s Smorgasbord is included in your trip registration fee. The buffet offers a wide variety of Pennsylvania Dutch specialties and traditional American favorites."
+      answer: "Yes, lunch at Miller's Smorgasbord is included in your trip registration fee. The buffet offers a wide variety of Pennsylvania Dutch specialties and traditional American favorites."
     },
     {
       question: "Can I bring children on this trip?",
@@ -40,11 +40,11 @@ const ContactPage = () => {
     },
     {
       question: "Is there Wi-Fi on the bus?",
-      answer: "The buses are equipped with Wi-Fi, but connectivity may be limited in some areas during the journey. Please don&apos;t rely on it for important work or communications."
+      answer: "The buses are equipped with Wi-Fi, but connectivity may be limited in some areas during the journey. Please don't rely on it for important work or communications."
     },
     {
       question: "What if I have dietary restrictions?",
-      answer: "Miller&apos;s Smorgasbord offers a variety of options that can accommodate most dietary needs. If you have severe allergies or very specific dietary requirements, please contact us in advance so we can make appropriate arrangements."
+      answer: "Miller's Smorgasbord offers a variety of options that can accommodate most dietary needs. If you have severe allergies or very specific dietary requirements, please contact us in advance so we can make appropriate arrangements."
     }
   ];
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from &apos;react';
+import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 interface TimelineItemProps {

@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaHome, FaCalendarAlt, FaMapMarkedAlt, FaInfoCircle } from &apos;react-icons/fa';
+import { FaHome, FaCalendarAlt, FaMapMarkedAlt, FaInfoCircle } from 'react-icons/fa';
 
 const BottomNavigation = () => {
   const pathname = usePathname();
@@ -55,7 +55,7 @@ const BottomNavigation = () => {
               >
                 <motion.div
                   className={`flex flex-col items-center justify-center ${
-                    isActive ? &apos;text-blue-600' : &apos;text-gray-500'
+                    isActive ? 'text-blue-600' : 'text-gray-500'
                   }`}
                   whileTap={{ scale: 0.9 }}
                 >
@@ -66,7 +66,7 @@ const BottomNavigation = () => {
                     <motion.div
                       className="absolute -bottom-0 w-12 h-1 bg-blue-600 rounded-t-full"
                       layoutId="bottomNavIndicator"
-                      transition={{ type: &apos;spring', stiffness: 300, damping: 30 }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                     />
                   )}
                 </motion.div>

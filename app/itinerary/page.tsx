@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from &apos;react';
+import { useState } from 'react';
 import { 
   FaBus, 
   FaShoppingBag, 
@@ -8,7 +8,7 @@ import {
   FaStore, 
   FaTheaterMasks, 
   FaHome
-} from &apos;react-icons/fa';
+} from 'react-icons/fa';
 import TabComponent from '../../components/TabComponent';
 import TimelineItem from '../../components/TimelineItem';
 import { motion } from 'framer-motion';
@@ -41,8 +41,8 @@ const ItineraryPage = () => {
     },
     { 
       time: '12:30 PM', 
-      title: 'Miller\&apos;s Smorgasbord', 
-      description: 'Lunch at Miller\&apos;s Smorgasbord', 
+      title: 'Miller\'s Smorgasbord', 
+      description: 'Lunch at Miller\'s Smorgasbord', 
       icon: <FaUtensils size={18} />,
       emoji: '🍽️'
     },
@@ -63,7 +63,7 @@ const ItineraryPage = () => {
     { 
       time: '3:00 PM', 
       title: 'NOAH Show', 
-      description: 'Experience the &quot;NOAH&quot; show at Sight &amp; Sound Theatre', 
+      description: 'Experience the "NOAH" show at Sight &amp; Sound Theatre', 
       icon: <FaTheaterMasks size={18} />,
       emoji: '🎭'
     },
@@ -88,8 +88,8 @@ const ItineraryPage = () => {
     },
     { 
       time: '11:30 AM', 
-      title: 'Miller\&apos;s Smorgasbord', 
-      description: 'Lunch at Miller\&apos;s Smorgasbord', 
+      title: 'Miller\'s Smorgasbord', 
+      description: 'Lunch at Miller\'s Smorgasbord', 
       icon: <FaUtensils size={18} />,
       emoji: '🍽️'
     },
@@ -110,7 +110,7 @@ const ItineraryPage = () => {
     { 
       time: '3:00 PM', 
       title: 'NOAH Show', 
-      description: 'Experience the &quot;NOAH&quot; show at Sight &amp; Sound Theatre', 
+      description: 'Experience the "NOAH" show at Sight &amp; Sound Theatre', 
       icon: <FaTheaterMasks size={18} />,
       emoji: '🎭'
     },

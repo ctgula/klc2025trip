@@ -69,12 +69,12 @@ const DestinationsPage = () => {
   // Amish shops information
   const amishShops = [
     {
-      name: "Anna&apos;s Gifts",
+      name: "Anna's Gifts",
       description: "Handmade quilts, dolls, and home decor items crafted by local Amish artisans.",
       specialty: "Quilts and handmade crafts"
     },
     {
-      name: "Ruthie&apos;s",
+      name: "Ruthie's",
       description: "Traditional Amish foods including jams, jellies, pickles, and baked goods.",
       specialty: "Homemade jams and preserves"
     },
@@ -106,7 +106,7 @@ const DestinationsPage = () => {
   ];
 
   // Tanger Outlets top stores
-  const topStores = ['Nike', 'Coach', 'H&M', 'UGG', 'Under Armour', 'Polo Ralph Lauren', 'Kate Spade', 'Adidas', 'Columbia', 'Levi\&apos;s'];
+  const topStores = ['Nike', 'Coach', 'H&M', 'UGG', 'Under Armour', 'Polo Ralph Lauren', 'Kate Spade', 'Adidas', 'Columbia', 'Levi\'s'];
 
   return (
     <div className="min-h-screen bg-gray-50 py-16">
@@ -165,10 +165,10 @@ const DestinationsPage = () => {
 
           {/* Miller&apos;s Smorgasbord */}
           <DestinationCard
-            title="Miller&apos;s Smorgasbord"
+            title="Miller's Smorgasbord"
             description="Enjoy authentic Pennsylvania Dutch cooking at this famous Lancaster County restaurant."
-            imageSrc="https://placehold.co/800x400/e2e8f0/4a6fa5?text=Miller&apos;s+Smorgasbord"
-            imageAlt="Miller&apos;s Smorgasbord Restaurant"
+            imageSrc="https://placehold.co/800x400/e2e8f0/4a6fa5?text=Miller's+Smorgasbord"
+            imageAlt="Miller's Smorgasbord Restaurant"
             emoji="🍽️"
           >
             <div className="space-y-4">

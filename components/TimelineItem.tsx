@@ -7,12 +7,12 @@ interface TimelineItemProps {
   time: string;
   title: string;
   description?: string;
-  icon: ReactNode;
+  icon?: ReactNode; // Optional since we're using emoji instead
   emoji: string; // Added emoji property
   isLast?: boolean;
 }
 
-const TimelineItem = ({ time, title, description, icon, emoji, isLast = false }: TimelineItemProps) => {
+const TimelineItem = ({ time, title, description, emoji, isLast = false }: TimelineItemProps) => {
   return (
     <motion.div 
       className="flex gap-2 sm:gap-4 w-full"

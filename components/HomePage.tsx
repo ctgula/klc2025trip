@@ -1,6 +1,6 @@
 'use client';
 
-import Image from "next/image";
+// Removed unused Image import
 import Link from "next/link";
 import CountdownTimer from "./CountdownTimer";
 import { FaArrowRight } from "react-icons/fa";

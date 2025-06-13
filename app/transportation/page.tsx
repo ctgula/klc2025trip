@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaBus, FaParking, FaClock, FaClipboardCheck, FaExclamationTriangle } from &apos;react-icons/fa';
+import { FaBus, FaParking, FaClock, FaClipboardCheck, FaExclamationTriangle } from 'react-icons/fa';
 
 const TransportationPage = () => {
   return (

@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+// Removed unused useState import
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaClock, FaUtensils, FaShoppingBag, FaTheaterMasks, FaQuestion } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaUtensils, FaTheaterMasks, FaQuestion } from 'react-icons/fa';
 import DestinationCard from '../../components/DestinationCard';
 
 const DestinationsPage = () => {

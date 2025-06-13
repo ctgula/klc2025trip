@@ -14,7 +14,7 @@ import TimelineItem from '../../components/TimelineItem';
 import { motion } from 'framer-motion';
 
 const ItineraryPage = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  // Tab state is managed internally by TabComponent
 
   // Bus 1 Timeline Data - Tanger / Miller&apos;s / S&S
   const bus1Timeline = [

@@ -7,26 +7,26 @@ import { motion } from 'framer-motion';
 interface LogoProps {
   className?: string;
   showTagline?: boolean;
-  size?: &apos;small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large';
 }
 
 const Logo = ({ className = '', showTagline = true, size = 'medium' }: LogoProps) => {
   // Size classes mapping
   const sizeClasses = {
     small: {
-      main: &apos;text-base',
-      secondary: &apos;text-xs',
-      tagline: &apos;text-xs'
+      main: 'text-base',
+      secondary: 'text-xs',
+      tagline: 'text-xs'
     },
     medium: {
-      main: &apos;text-lg',
-      secondary: &apos;text-xs',
-      tagline: &apos;text-sm'
+      main: 'text-lg',
+      secondary: 'text-xs',
+      tagline: 'text-sm'
     },
     large: {
-      main: &apos;text-2xl md:text-3xl',
-      secondary: &apos;text-sm md:text-base',
-      tagline: &apos;text-base md:text-lg'
+      main: 'text-2xl md:text-3xl',
+      secondary: 'text-sm md:text-base',
+      tagline: 'text-base md:text-lg'
     }
   };
   

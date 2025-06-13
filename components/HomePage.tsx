@@ -1,14 +1,14 @@
 'use client';
 
-import Image from &quot;next/image&quot;;
-import Link from &quot;next/link&quot;;
-import CountdownTimer from &quot;./CountdownTimer&quot;;
-import { FaArrowRight } from &quot;react-icons/fa&quot;;
-import { motion } from &quot;framer-motion&quot;;
+import Image from "next/image";
+import Link from "next/link";
+import CountdownTimer from "./CountdownTimer";
+import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   // Set the trip date to a future date
-  const tripDate = &quot;2025-08-15&quot;; // August 15, 2025
+  const tripDate = "2025-08-15"; // August 15, 2025
 
   return (
     <div className="flex flex-col min-h-screen">

@@ -7,17 +7,30 @@ const directories = [
   path.join(__dirname, 'components')
 ];
 
-// Function to fix incorrectly escaped quotes in import statements
+// Function to fix incorrectly escaped quotes in import statements and JSX
 function fixImportQuotes(content) {
-  // Fix quotes in import statements
-  // This regex looks for import statements and fixes the quotes
-  return content.replace(/(import\s+(?:{[^}]*}\s+from\s+|[^;]*\s+from\s+|)[&quot;'])([^;]*?)([&quot;'])/g, 
+  // Step 1: Fix quotes in import statements
+  content = content.replace(/(import\s+(?:{[^}]*}\s+from\s+|[^;]*\s+from\s+|)[&quot;'])([^;]*?)([&quot;'])/g, 
     (match, prefix, middle, suffix) => {
       // Replace &quot; with actual quotes
       const fixedPrefix = prefix.replace(/&quot;/g, '"');
       const fixedSuffix = suffix.replace(/&quot;/g, '"');
       return `${fixedPrefix}${middle}${fixedSuffix}`;
     });
+  
+  // Step 2: Fix quotes in JSX attributes
+  content = content.replace(/([\s<>])([a-zA-Z0-9-]+)=&quot;([^"]*?)&quot;/g, 
+    (match, prefix, attrName, attrValue) => {
+      return `${prefix}${attrName}="${attrValue}"`;
+    });
+    
+  // Step 3: Fix quotes in object literals and other places
+  content = content.replace(/([{,\s]\s*)([a-zA-Z0-9_]+):\s*&quot;([^"]*?)&quot;/g, 
+    (match, prefix, key, value) => {
+      return `${prefix}${key}: "${value}"`;
+    });
+    
+  return content;
 }
 
 // Function to process a file

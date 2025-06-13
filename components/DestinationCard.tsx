@@ -29,7 +29,7 @@ const DestinationCard = ({
   
   return (
     <motion.div 
-      className=&quot;bg-white rounded-xl shadow-md overflow-hidden mb-4&quot;
+      className="bg-white rounded-xl shadow-md overflow-hidden mb-4"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -38,19 +38,19 @@ const DestinationCard = ({
     >
       {/* Card Header - Always visible */}
       <div 
-        className=&quot;flex items-center cursor-pointer p-4 border-b border-gray-100&quot;
+        className="flex items-center cursor-pointer p-4 border-b border-gray-100"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <div className=&quot;flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 mr-3 flex-shrink-0&quot;>
-          <span className=&quot;text-xl&quot;>{emoji}</span>
+        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 mr-3 flex-shrink-0">
+          <span className="text-xl">{emoji}</span>
         </div>
-        <div className=&quot;flex-1&quot;>
-          <h3 className=&quot;text-xl font-semibold text-gray-800&quot;>{title}</h3>
-          <p className=&quot;text-sm text-gray-600 line-clamp-1&quot;>{description}</p>
+        <div className="flex-1">
+          <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+          <p className="text-sm text-gray-600 line-clamp-1">{description}</p>
         </div>
         <motion.div
           animate={{ rotate: isExpanded ? 180 : 0 }}
-          className=&quot;text-blue-500 flex-shrink-0&quot;
+          className="text-blue-500 flex-shrink-0"
         >
           {isExpanded ? <FaChevronUp /> : <FaChevronDown />}
         </motion.div>
@@ -64,21 +64,21 @@ const DestinationCard = ({
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className=&quot;overflow-hidden&quot;
+            className="overflow-hidden"
           >
             {imageSrc && (
-              <div className=&quot;relative h-48 w-full&quot;>
+              <div className="relative h-48 w-full">
                 <ImageFallback 
                   src={imageSrc}
                   fallbackSrc={fallbackImage}
                   alt={imageAlt}
                   fill
-                  className=&quot;object-cover&quot;
+                  className="object-cover"
                 />
               </div>
             )}
             
-            <div className=&quot;p-4&quot;>
+            <div className="p-4">
               {children}
             </div>
           </motion.div>

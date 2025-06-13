@@ -31,16 +31,16 @@ const Logo = ({ className = '', showTagline = true, size = 'medium' }: LogoProps
   };
   
   return (
-    <Link href=&quot;/&quot; className={`flex items-center ${className}`}>
+    <Link href="/" className={`flex items-center ${className}`}>
       <motion.div 
-        className=&quot;flex flex-col&quot; 
+        className="flex flex-col" 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         whileHover={{ scale: 1.02 }}
       >
         <div className={`font-bold leading-tight ${sizeClasses[size].main}`}>
-          <span className=&quot;text-blue-700&quot;>LIVING WORD</span>
+          <span className="text-blue-700">LIVING WORD</span>
         </div>
         <div className={`font-medium tracking-wider text-blue-500 ${sizeClasses[size].secondary}`}>
           INTERNATIONAL CHRISTIAN CHURCH

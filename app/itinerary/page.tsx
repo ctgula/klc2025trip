@@ -130,11 +130,11 @@ const ItineraryPage = () => {
     {
       title: 'Bus 1',
       children: (
-        <div className=&quot;py-4&quot;>
-          <h3 className=&quot;text-xl font-semibold mb-6 flex items-center&quot;>
-            <span className=&quot;mr-2 text-2xl&quot;>🚌</span> Bus 1 Schedule - Tanger / Miller&apos;s / S&amp;S
+        <div className="py-4">
+          <h3 className="text-xl font-semibold mb-6 flex items-center">
+            <span className="mr-2 text-2xl">🚌</span> Bus 1 Schedule - Tanger / Miller&apos;s / S&amp;S
           </h3>
-          <div className=&quot;pl-2 sm:pl-4&quot;>
+          <div className="pl-2 sm:pl-4">
             {bus1Timeline.map((item, index) => (
               <TimelineItem
                 key={index}
@@ -153,11 +153,11 @@ const ItineraryPage = () => {
     {
       title: 'Bus 2',
       children: (
-        <div className=&quot;py-4&quot;>
-          <h3 className=&quot;text-xl font-semibold mb-6 flex items-center&quot;>
-            <span className=&quot;mr-2 text-2xl&quot;>🚌</span> Bus 2 Schedule - Miller&apos;s / S&amp;S
+        <div className="py-4">
+          <h3 className="text-xl font-semibold mb-6 flex items-center">
+            <span className="mr-2 text-2xl">🚌</span> Bus 2 Schedule - Miller&apos;s / S&amp;S
           </h3>
-          <div className=&quot;pl-2 sm:pl-4&quot;>
+          <div className="pl-2 sm:pl-4">
             {bus2Timeline.map((item, index) => (
               <TimelineItem
                 key={index}
@@ -176,35 +176,35 @@ const ItineraryPage = () => {
   ];
 
   return (
-    <div className=&quot;min-h-screen bg-gray-50 py-16 px-4&quot;>
-      <div className=&quot;container-custom&quot;>
+    <div className="min-h-screen bg-gray-50 py-16 px-4">
+      <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className=&quot;mb-10 text-center&quot;
+          className="mb-10 text-center"
         >
-          <h1 className=&quot;text-3xl md:text-4xl font-bold text-gray-800 mb-4&quot;>Trip Itinerary</h1>
-          <p className=&quot;text-lg text-gray-600 max-w-3xl mx-auto&quot;>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Trip Itinerary</h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Our day in Lancaster is packed with shopping, dining, and entertainment.
             Below is the detailed schedule for each bus.
           </p>
         </motion.div>
 
-        <div className=&quot;bg-white rounded-xl shadow-md p-4 sm:p-6 mb-8&quot;>
+        <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 mb-8">
           <TabComponent tabs={tabs} />
         </div>
 
         <motion.div 
-          className=&quot;bg-blue-50 rounded-xl p-4 sm:p-6 border border-blue-100&quot;
+          className="bg-blue-50 rounded-xl p-4 sm:p-6 border border-blue-100"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <h3 className=&quot;text-xl font-semibold mb-4 text-blue-800 flex items-center&quot;>
-            <span className=&quot;mr-2 text-2xl&quot;>📝</span> Important Notes
+          <h3 className="text-xl font-semibold mb-4 text-blue-800 flex items-center">
+            <span className="mr-2 text-2xl">📝</span> Important Notes
           </h3>
-          <ul className=&quot;list-none space-y-3 text-gray-700&quot;>
+          <ul className="list-none space-y-3 text-gray-700">
             {[
               'Please arrive 30 minutes before departure time for check-in',
               'Bring comfortable walking shoes',
@@ -214,12 +214,12 @@ const ItineraryPage = () => {
             ].map((note, index) => (
               <motion.li 
                 key={index} 
-                className=&quot;flex items-start p-2 border-l-4 border-blue-300 pl-3 bg-white rounded-r-lg shadow-sm&quot;
+                className="flex items-start p-2 border-l-4 border-blue-300 pl-3 bg-white rounded-r-lg shadow-sm"
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1 * index }}
               >
-                <span className=&quot;text-blue-600 mr-2&quot;>•</span> {note}
+                <span className="text-blue-600 mr-2">•</span> {note}
               </motion.li>
             ))}
           </ul>

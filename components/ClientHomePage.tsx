@@ -10,68 +10,68 @@ export default function ClientHomePage() {
   const tripDate = &quot;2025-08-15&quot;; // August 15, 2025
 
   return (
-    <div className=&quot;flex flex-col min-h-screen&quot;>
+    <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className=&quot;relative bg-blue-50 py-16 md:py-28&quot;>
-        <div className=&quot;container-custom&quot;>
-          <div className=&quot;flex flex-col items-center text-center&quot;>
+      <section className="relative bg-blue-50 py-16 md:py-28">
+        <div className="container-custom">
+          <div className="flex flex-col items-center text-center">
             <motion.div 
-              className=&quot;bg-white p-5 rounded-lg shadow-sm mb-6 w-full max-w-3xl -mt-4&quot;
+              className="bg-white p-5 rounded-lg shadow-sm mb-6 w-full max-w-3xl -mt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className=&quot;text-center&quot;>
-                <div className=&quot;flex justify-center items-center gap-4 mb-3&quot;>
-                  <div className=&quot;w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center&quot;>
-                    <span className=&quot;text-blue-700 font-bold&quot;>KLCC</span>
+              <div className="text-center">
+                <div className="flex justify-center items-center gap-4 mb-3">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-blue-700 font-bold">KLCC</span>
                   </div>
-                  <div className=&quot;w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center&quot;>
-                    <span className=&quot;text-blue-700 font-bold&quot;>LWICC</span>
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-blue-700 font-bold">LWICC</span>
                   </div>
                 </div>
-                <h2 className=&quot;text-xl md:text-2xl font-bold text-blue-700&quot;>Kingdom Life Community Church &amp; Living Word International Christian Church</h2>
-                <p className=&quot;text-gray-600 text-sm mt-1&quot;>Present</p>
+                <h2 className="text-xl md:text-2xl font-bold text-blue-700">Kingdom Life Community Church &amp; Living Word International Christian Church</h2>
+                <p className="text-gray-600 text-sm mt-1">Present</p>
               </div>
             </motion.div>
             
-            <h1 className=&quot;text-4xl md:text-5xl font-bold text-gray-800 mb-4&quot;>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
               Lancaster Trip Hub 2025
             </h1>
             
-            <p className=&quot;text-xl text-gray-600 max-w-2xl mb-8&quot;>
+            <p className="text-xl text-gray-600 max-w-2xl mb-8">
               Join us for a memorable one-day trip to Lancaster, Pennsylvania
             </p>
             
-            <div className=&quot;bg-white rounded-xl shadow-lg p-6 mb-10 max-w-3xl w-full&quot;>
-              <h2 className=&quot;text-2xl font-semibold mb-4&quot;>Welcome Message</h2>
-              <p className=&quot;text-gray-700 mb-4&quot;>
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-10 max-w-3xl w-full">
+              <h2 className="text-2xl font-semibold mb-4">Welcome Message</h2>
+              <p className="text-gray-700 mb-4">
                 Dear Friends and Family,
               </p>
-              <p className=&quot;text-gray-700 mb-4&quot;>
+              <p className="text-gray-700 mb-4">
                 We are excited to invite you to join us for a wonderful day trip to Lancaster, Pennsylvania. 
                 This trip is hosted by Kingdom Life Community Church (KLCC) and Living Word International Christian Church (LWICC).
               </p>
-              <p className=&quot;text-gray-700 mb-4&quot;>
+              <p className="text-gray-700 mb-4">
                 We have planned a day filled with shopping, delicious food, and an amazing theatrical experience at the Sight &amp; Sound Theatre.
               </p>
-              <p className=&quot;text-gray-700 mb-4&quot;>
+              <p className="text-gray-700 mb-4">
                 We look forward to sharing this special day with you!
               </p>
-              <p className=&quot;text-gray-700 font-medium&quot;>
+              <p className="text-gray-700 font-medium">
                 Blessings,<br />
                 Pastor John &amp; Andrea Thompson<br />
                 Kingdom Life Community Church &amp; Living Word International Christian Church
               </p>
             </div>
             
-            <div className=&quot;mb-10&quot;>
+            <div className="mb-10">
               <CountdownTimer targetDate={tripDate} />
             </div>
             
             <Link 
-              href=&quot;/itinerary&quot; 
-              className=&quot;btn btn-primary text-lg fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 shadow-lg flex items-center gap-2&quot;
+              href="/itinerary" 
+              className="btn btn-primary text-lg fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 shadow-lg flex items-center gap-2"
             >
               Start Here <FaArrowRight />
             </Link>
@@ -80,29 +80,29 @@ export default function ClientHomePage() {
       </section>
       
       {/* Quick Info Section */}
-      <section className=&quot;py-16 bg-white&quot;>
-        <div className=&quot;container-custom&quot;>
-          <div className=&quot;grid grid-cols-1 md:grid-cols-3 gap-8&quot;>
-            <div className=&quot;card p-6&quot;>
-              <h3 className=&quot;text-xl font-semibold mb-3&quot;>Itinerary</h3>
-              <p className=&quot;text-gray-600 mb-4&quot;>View our detailed schedule for the day, including departure times, activities, and return information.</p>
-              <Link href=&quot;/itinerary&quot; className=&quot;text-blue-600 hover:underline flex items-center gap-1&quot;>
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="card p-6">
+              <h3 className="text-xl font-semibold mb-3">Itinerary</h3>
+              <p className="text-gray-600 mb-4">View our detailed schedule for the day, including departure times, activities, and return information.</p>
+              <Link href="/itinerary" className="text-blue-600 hover:underline flex items-center gap-1">
                 View Schedule <FaArrowRight size={12} />
               </Link>
             </div>
             
-            <div className=&quot;card p-6&quot;>
-              <h3 className=&quot;text-xl font-semibold mb-3&quot;>Destinations</h3>
-              <p className=&quot;text-gray-600 mb-4&quot;>Explore the places we&apos;ll visit, including Tanger Outlets, Miller&apos;s Smorgasbord, Amish shops, and Sight &amp; Sound Theatre.</p>
-              <Link href=&quot;/destinations&quot; className=&quot;text-blue-600 hover:underline flex items-center gap-1&quot;>
+            <div className="card p-6">
+              <h3 className="text-xl font-semibold mb-3">Destinations</h3>
+              <p className="text-gray-600 mb-4">Explore the places we&apos;ll visit, including Tanger Outlets, Miller&apos;s Smorgasbord, Amish shops, and Sight &amp; Sound Theatre.</p>
+              <Link href="/destinations" className="text-blue-600 hover:underline flex items-center gap-1">
                 Explore Destinations <FaArrowRight size={12} />
               </Link>
             </div>
             
-            <div className=&quot;card p-6&quot;>
-              <h3 className=&quot;text-xl font-semibold mb-3&quot;>Transportation</h3>
-              <p className=&quot;text-gray-600 mb-4&quot;>Get details about our bus transportation, including check-in location, parking information, and bus assignments.</p>
-              <Link href=&quot;/transportation&quot; className=&quot;text-blue-600 hover:underline flex items-center gap-1&quot;>
+            <div className="card p-6">
+              <h3 className="text-xl font-semibold mb-3">Transportation</h3>
+              <p className="text-gray-600 mb-4">Get details about our bus transportation, including check-in location, parking information, and bus assignments.</p>
+              <Link href="/transportation" className="text-blue-600 hover:underline flex items-center gap-1">
                 Transportation Info <FaArrowRight size={12} />
               </Link>
             </div>

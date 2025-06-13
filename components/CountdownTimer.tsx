@@ -52,17 +52,17 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   ];
 
   return (
-    <div className=&quot;w-full max-w-3xl mx-auto&quot;>
-      <h3 className=&quot;text-center text-xl font-medium mb-4&quot;>Trip Countdown</h3>
-      <div className=&quot;flex justify-center space-x-4&quot;>
+    <div className="w-full max-w-3xl mx-auto">
+      <h3 className="text-center text-xl font-medium mb-4">Trip Countdown</h3>
+      <div className="flex justify-center space-x-4">
         {timeBlocks.map((block) => (
-          <div key={block.label} className=&quot;flex flex-col items-center&quot;>
-            <div className=&quot;bg-white rounded-lg shadow-md w-20 h-20 flex items-center justify-center mb-2&quot;>
-              <span className=&quot;text-3xl font-bold text-blue-600&quot;>
+          <div key={block.label} className="flex flex-col items-center">
+            <div className="bg-white rounded-lg shadow-md w-20 h-20 flex items-center justify-center mb-2">
+              <span className="text-3xl font-bold text-blue-600">
                 {block.value.toString().padStart(2, '0')}
               </span>
             </div>
-            <span className=&quot;text-sm font-medium text-gray-600&quot;>{block.label}</span>
+            <span className="text-sm font-medium text-gray-600">{block.label}</span>
           </div>
         ))}
       </div>

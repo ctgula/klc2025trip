@@ -14,18 +14,18 @@ const AccordionItem = ({ title, children, isInitiallyOpen = false }: AccordionIt
   const [isOpen, setIsOpen] = useState(isInitiallyOpen);
 
   return (
-    <div className=&quot;border-b border-gray-200 last:border-b-0&quot;>
+    <div className="border-b border-gray-200 last:border-b-0">
       <button
-        className=&quot;flex justify-between items-center w-full py-4 px-1 text-left&quot;
+        className="flex justify-between items-center w-full py-4 px-1 text-left"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <h3 className=&quot;text-lg font-medium text-gray-800&quot;>{title}</h3>
+        <h3 className="text-lg font-medium text-gray-800">{title}</h3>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
         >
-          <FaChevronDown className=&quot;text-blue-600&quot; />
+          <FaChevronDown className="text-blue-600" />
         </motion.div>
       </button>
       
@@ -36,9 +36,9 @@ const AccordionItem = ({ title, children, isInitiallyOpen = false }: AccordionIt
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className=&quot;overflow-hidden&quot;
+            className="overflow-hidden"
           >
-            <div className=&quot;pb-4 px-1 text-gray-700&quot;>
+            <div className="pb-4 px-1 text-gray-700">
               {children}
             </div>
           </motion.div>

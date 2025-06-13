@@ -17,8 +17,8 @@ const TabComponent = ({ tabs, defaultTab = 0 }: TabsProps) => {
   const [activeTab, setActiveTab] = useState(defaultTab);
 
   return (
-    <div className=&quot;w-full&quot;>
-      <div className=&quot;flex overflow-x-auto scrollbar-hide border-b border-gray-200 mb-6&quot;>
+    <div className="w-full">
+      <div className="flex overflow-x-auto scrollbar-hide border-b border-gray-200 mb-6">
         {tabs.map((tab, index) => (
           <button
             key={index}
@@ -32,18 +32,18 @@ const TabComponent = ({ tabs, defaultTab = 0 }: TabsProps) => {
             {tab.title}
             {activeTab === index && (
               <motion.div 
-                className=&quot;absolute bottom-0 left-0 right-0 h-0.5 sm:h-1 bg-blue-600 rounded-t-full&quot;
-                layoutId=&quot;activeTabIndicator&quot;
+                className="absolute bottom-0 left-0 right-0 h-0.5 sm:h-1 bg-blue-600 rounded-t-full"
+                layoutId="activeTabIndicator"
                 transition={{ type: &apos;spring', stiffness: 300, damping: 30 }}
               />
             )}
           </button>
         ))}
       </div>
-      <AnimatePresence mode=&quot;wait&quot;>
+      <AnimatePresence mode="wait">
         <motion.div 
           key={activeTab}
-          className=&quot;tab-content&quot;
+          className="tab-content"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}

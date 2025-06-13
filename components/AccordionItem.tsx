@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from &apos;react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChevronDown } from &apos;react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 
 interface AccordionItemProps {
   title: string;

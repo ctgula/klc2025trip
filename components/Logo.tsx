@@ -7,40 +7,40 @@ import { motion } from 'framer-motion';
 interface LogoProps {
   className?: string;
   showTagline?: boolean;
-  size?: 'small' | 'medium' | 'large';
+  size?: &apos;small' | 'medium' | 'large';
 }
 
 const Logo = ({ className = '', showTagline = true, size = 'medium' }: LogoProps) => {
   // Size classes mapping
   const sizeClasses = {
     small: {
-      main: 'text-base',
-      secondary: 'text-xs',
-      tagline: 'text-xs'
+      main: &apos;text-base',
+      secondary: &apos;text-xs',
+      tagline: &apos;text-xs'
     },
     medium: {
-      main: 'text-lg',
-      secondary: 'text-xs',
-      tagline: 'text-sm'
+      main: &apos;text-lg',
+      secondary: &apos;text-xs',
+      tagline: &apos;text-sm'
     },
     large: {
-      main: 'text-2xl md:text-3xl',
-      secondary: 'text-sm md:text-base',
-      tagline: 'text-base md:text-lg'
+      main: &apos;text-2xl md:text-3xl',
+      secondary: &apos;text-sm md:text-base',
+      tagline: &apos;text-base md:text-lg'
     }
   };
   
   return (
-    <Link href="/" className={`flex items-center ${className}`}>
+    <Link href=&quot;/&quot; className={`flex items-center ${className}`}>
       <motion.div 
-        className="flex flex-col" 
+        className=&quot;flex flex-col&quot; 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         whileHover={{ scale: 1.02 }}
       >
         <div className={`font-bold leading-tight ${sizeClasses[size].main}`}>
-          <span className="text-blue-700">LIVING WORD</span>
+          <span className=&quot;text-blue-700&quot;>LIVING WORD</span>
         </div>
         <div className={`font-medium tracking-wider text-blue-500 ${sizeClasses[size].secondary}`}>
           INTERNATIONAL CHRISTIAN CHURCH

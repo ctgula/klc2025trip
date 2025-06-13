@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState } from &apos;react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown } from &apos;react-icons/fa';
 
 interface AccordionItemProps {
   title: string;
@@ -14,18 +14,18 @@ const AccordionItem = ({ title, children, isInitiallyOpen = false }: AccordionIt
   const [isOpen, setIsOpen] = useState(isInitiallyOpen);
 
   return (
-    <div className="border-b border-gray-200 last:border-b-0">
+    <div className=&quot;border-b border-gray-200 last:border-b-0&quot;>
       <button
-        className="flex justify-between items-center w-full py-4 px-1 text-left"
+        className=&quot;flex justify-between items-center w-full py-4 px-1 text-left&quot;
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <h3 className="text-lg font-medium text-gray-800">{title}</h3>
+        <h3 className=&quot;text-lg font-medium text-gray-800&quot;>{title}</h3>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
         >
-          <FaChevronDown className="text-blue-600" />
+          <FaChevronDown className=&quot;text-blue-600&quot; />
         </motion.div>
       </button>
       
@@ -36,9 +36,9 @@ const AccordionItem = ({ title, children, isInitiallyOpen = false }: AccordionIt
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden"
+            className=&quot;overflow-hidden&quot;
           >
-            <div className="pb-4 px-1 text-gray-700">
+            <div className=&quot;pb-4 px-1 text-gray-700&quot;>
               {children}
             </div>
           </motion.div>

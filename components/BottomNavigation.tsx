@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaHome, FaCalendarAlt, FaMapMarkedAlt, FaInfoCircle } from 'react-icons/fa';
+import { FaHome, FaCalendarAlt, FaMapMarkedAlt, FaInfoCircle } from &apos;react-icons/fa';
 
 const BottomNavigation = () => {
   const pathname = usePathname();
@@ -12,38 +12,38 @@ const BottomNavigation = () => {
     {
       name: 'Home',
       href: '/',
-      icon: <FaHome className="w-5 h-5" />,
+      icon: <FaHome className=&quot;w-5 h-5&quot; />,
     },
     {
       name: 'Itinerary',
       href: '/itinerary',
-      icon: <FaCalendarAlt className="w-5 h-5" />,
+      icon: <FaCalendarAlt className=&quot;w-5 h-5&quot; />,
     },
     {
       name: 'Destinations',
       href: '/destinations',
-      icon: <FaMapMarkedAlt className="w-5 h-5" />,
+      icon: <FaMapMarkedAlt className=&quot;w-5 h-5&quot; />,
     },
     {
       name: 'Contact',
       href: '/contact',
-      icon: <FaInfoCircle className="w-5 h-5" />,
+      icon: <FaInfoCircle className=&quot;w-5 h-5&quot; />,
     },
   ];
 
   return (
     <>
       {/* Spacer to prevent content from being hidden behind the navigation */}
-      <div className="h-16 md:h-0" />
+      <div className=&quot;h-16 md:h-0&quot; />
       
       {/* Bottom Navigation */}
       <motion.nav 
-        className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg md:hidden z-50"
+        className=&quot;fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg md:hidden z-50&quot;
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.3, delay: 0.5 }}
       >
-        <div className="flex justify-around items-center h-16">
+        <div className=&quot;flex justify-around items-center h-16&quot;>
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             
@@ -51,22 +51,22 @@ const BottomNavigation = () => {
               <Link 
                 key={item.name} 
                 href={item.href}
-                className="relative flex flex-col items-center justify-center w-full h-full"
+                className=&quot;relative flex flex-col items-center justify-center w-full h-full&quot;
               >
                 <motion.div
                   className={`flex flex-col items-center justify-center ${
-                    isActive ? 'text-blue-600' : 'text-gray-500'
+                    isActive ? &apos;text-blue-600' : &apos;text-gray-500'
                   }`}
                   whileTap={{ scale: 0.9 }}
                 >
                   {item.icon}
-                  <span className="text-xs mt-1">{item.name}</span>
+                  <span className=&quot;text-xs mt-1&quot;>{item.name}</span>
                   
                   {isActive && (
                     <motion.div
-                      className="absolute -bottom-0 w-12 h-1 bg-blue-600 rounded-t-full"
-                      layoutId="bottomNavIndicator"
-                      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                      className=&quot;absolute -bottom-0 w-12 h-1 bg-blue-600 rounded-t-full&quot;
+                      layoutId=&quot;bottomNavIndicator&quot;
+                      transition={{ type: &apos;spring', stiffness: 300, damping: 30 }}
                     />
                   )}
                 </motion.div>

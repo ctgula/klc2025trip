@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from &apos;react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from &apos;react-icons/fa';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,8 +27,8 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener(&apos;scroll', handleScroll);
+    return () => window.removeEventListener(&apos;scroll', handleScroll);
   }, []);
 
   return (
@@ -37,19 +37,19 @@ const Navbar = () => {
         scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
-      <div className="container-custom flex items-center justify-between">
-        <Link href="/" className="text-lg font-bold text-blue-700">
+      <div className=&quot;container-custom flex items-center justify-between&quot;>
+        <Link href=&quot;/&quot; className=&quot;text-lg font-bold text-blue-700&quot;>
           Lancaster Trip 2025
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className=&quot;hidden md:flex items-center space-x-6&quot;>
           {navLinks.map((link) => (
             <Link
               key={link.path}
               href={link.path}
               className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                pathname === link.path ? 'text-blue-600' : 'text-gray-700'
+                pathname === link.path ? &apos;text-blue-600' : &apos;text-gray-700'
               }`}
             >
               {link.name}
@@ -59,9 +59,9 @@ const Navbar = () => {
 
         {/* Mobile Navigation Toggle */}
         <button
-          className="md:hidden text-gray-700 focus:outline-none"
+          className=&quot;md:hidden text-gray-700 focus:outline-none&quot;
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label=&quot;Toggle menu&quot;
         >
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
@@ -69,14 +69,14 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white">
-          <div className="container-custom py-4 flex flex-col space-y-4">
+        <div className=&quot;md:hidden bg-white&quot;>
+          <div className=&quot;container-custom py-4 flex flex-col space-y-4&quot;>
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 href={link.path}
                 className={`text-base font-medium transition-colors hover:text-blue-600 ${
-                  pathname === link.path ? 'text-blue-600' : 'text-gray-700'
+                  pathname === link.path ? &apos;text-blue-600' : &apos;text-gray-700'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

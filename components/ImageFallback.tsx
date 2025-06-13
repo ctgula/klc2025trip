@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState } from &apos;react';
 import Image, { ImageProps } from 'next/image';
 
 interface ImageFallbackProps extends ImageProps {

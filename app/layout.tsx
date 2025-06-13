@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ClientBottomNavigation from "../components/ClientBottomNavigation";
+import type { Metadata } from &quot;next&quot;;
+import { Inter } from &quot;next/font/google&quot;;
+import &quot;./globals.css&quot;;
+import Navbar from &quot;../components/Navbar&quot;;
+import Footer from &quot;../components/Footer&quot;;
+import ClientBottomNavigation from &quot;../components/ClientBottomNavigation&quot;;
 
 const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
+  subsets: [&quot;latin&quot;],
+  display: &quot;swap&quot;,
 });
 
 export const metadata: Metadata = {
-  title: "Lancaster Trip Hub 2025",
-  description: "A hub for the Lancaster, PA trip organized by Kingdom Life Community Church and Living Word International Church",
+  title: &quot;Lancaster Trip Hub 2025&quot;,
+  description: &quot;A hub for the Lancaster, PA trip organized by Kingdom Life Community Church and Living Word International Church&quot;,
 };
 
 export default function RootLayout({
@@ -21,10 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang=&quot;en&quot; className=&quot;scroll-smooth&quot;>
       <body className={inter.className}>
         <Navbar />
-        <main className="min-h-screen pt-16 pb-16 md:pb-0">{children}</main>
+        <main className=&quot;min-h-screen pt-16 pb-16 md:pb-0&quot;>{children}</main>
         <ClientBottomNavigation />
         <Footer />
       </body>

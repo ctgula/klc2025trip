@@ -1,8 +1,8 @@
 'use client';
 
-import dynamic from "next/dynamic";
+import dynamic from &quot;next/dynamic&quot;;
 
-const BottomNavigation = dynamic(() => import("./BottomNavigation"), {
+const BottomNavigation = dynamic(() => import(&quot;./BottomNavigation&quot;), {
   ssr: false,
 });
 

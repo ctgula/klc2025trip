@@ -1,9 +1,9 @@
 'use client';
 
-import { ReactNode, useState } from &apos;react';
+import { ReactNode, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ImageFallback from './ImageFallback';
-import { FaChevronDown, FaChevronUp } from &apos;react-icons/fa';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 interface DestinationCardProps {
   title: string;
@@ -18,14 +18,14 @@ const DestinationCard = ({
   title, 
   description, 
   imageSrc, 
-  imageAlt = &quot;Destination image&quot;,
+  imageAlt = "Destination image",
   children,
-  emoji = &quot;🏙️&quot;
+  emoji = "🏙️"
 }: DestinationCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   
   // Default placeholder image if none provided or if the image fails to load
-  const fallbackImage = &quot;https://placehold.co/600x400/e2e8f0/64748b?text=&quot; + encodeURIComponent(title);
+  const fallbackImage = "https://placehold.co/600x400/e2e8f0/64748b?text=" + encodeURIComponent(title);
   
   return (
     <motion.div 

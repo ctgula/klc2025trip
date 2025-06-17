@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
@@ -54,11 +55,13 @@ const Footer = () => {
                     info@kingdomlifecc.org
                   </a>
                 </p>
-                <p className="flex items-center text-gray-300">
-                  <FaPhone className="mr-2" />
-                  <a href="tel:3015551234" className="hover:text-white transition-colors">
-                    (301) 555-1234
-                  </a>
+                <p className="text-gray-300 mt-2">
+                  Meets Sunday mornings at Bel Pre Elementary School<br />
+                  13801 Rippling Brook Dr<br />
+                  Silver Spring, MD
+                </p>
+                <p className="text-gray-300 mt-1 italic">
+                  Come grow with us!
                 </p>
               </div>
               
@@ -68,12 +71,6 @@ const Footer = () => {
                   <FaEnvelope className="mr-2" />
                   <a href="mailto:info@lwicc.org" className="hover:text-white transition-colors">
                     info@lwicc.org
-                  </a>
-                </p>
-                <p className="flex items-center text-gray-300">
-                  <FaPhone className="mr-2" />
-                  <a href="tel:3019894673" className="hover:text-white transition-colors">
-                    (301) 989-4673
                   </a>
                 </p>
                 <p className="text-gray-300 mt-2">

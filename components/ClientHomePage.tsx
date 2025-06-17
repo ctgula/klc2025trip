@@ -1,13 +1,14 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import CountdownTimer from "./CountdownTimer";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function ClientHomePage() {
   // Set the trip date to a future date
-  const tripDate = "2025-08-15"; // August 15, 2025
+  const tripDate = "2025-07-12"; // July 12, 2025
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -22,21 +23,18 @@ export default function ClientHomePage() {
               transition={{ duration: 0.5 }}
             >
               <div className="text-center">
-                <div className="flex justify-center items-center gap-4 mb-3">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-700 font-bold">KLCC</span>
-                  </div>
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-700 font-bold">LWICC</span>
+                <div className="flex justify-center items-center mb-5">
+                  <div className="w-32 h-32 md:w-36 md:h-36 bg-gradient-to-b from-blue-50 to-white rounded-full flex items-center justify-center p-2 shadow-lg border border-blue-100 transform hover:scale-105 transition-transform duration-300">
+                    <Image src="/klc logo.jpeg" alt="Kingdom Life Community Church logo" width={120} height={120} className="object-contain rounded-full" priority />
                   </div>
                 </div>
-                <h2 className="text-xl md:text-2xl font-bold text-blue-700">Kingdom Life Community Church &amp; Living Word International Christian Church</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-blue-700">Kingdom Life Community Church</h2>
                 <p className="text-gray-600 text-sm mt-1">Present</p>
               </div>
             </motion.div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Lancaster Trip Hub 2025
+              Lancaster Summer Family Trip
             </h1>
             
             <p className="text-xl text-gray-600 max-w-2xl mb-8">
@@ -65,13 +63,22 @@ export default function ClientHomePage() {
               </p>
             </div>
             
-            <div className="mb-10">
+            <div className="relative mb-5 mx-auto max-w-xs sm:max-w-sm w-full transform transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl blur opacity-30"></div>
+              <div className="bg-white border border-blue-100 shadow-xl rounded-xl py-6 px-6 sm:px-10 relative z-10 flex flex-col items-center">
+                <div className="text-sm sm:text-base uppercase tracking-wide text-blue-700 font-semibold mb-2">Save The Date</div>
+                <div className="text-3xl sm:text-4xl font-bold text-gray-800">July 12, 2025</div>
+                <div className="text-gray-500 mt-1 font-medium">Saturday</div>
+              </div>
+            </div>
+            
+            <div className="mb-10 w-full max-w-md mx-auto">
               <CountdownTimer targetDate={tripDate} />
             </div>
             
             <Link 
               href="/itinerary" 
-              className="btn btn-primary text-lg fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 shadow-lg flex items-center gap-2"
+              className="btn btn-primary text-lg fixed bottom-12 left-1/2 transform -translate-x-1/2 z-50 shadow-xl flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-white/40"
             >
               Start Here <FaArrowRight />
             </Link>
@@ -106,6 +113,45 @@ export default function ClientHomePage() {
                 Transportation Info <FaArrowRight size={12} />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Memories & Reflections Section */}
+      <section className="py-16 bg-blue-50">
+        <div className="container-custom">
+          <h2 className="section-title text-center mb-8">Memories & Reflections</h2>
+          
+          <div className="max-w-3xl mx-auto text-center mb-8">
+            <p className="text-lg text-gray-700 mb-6">
+              Share your favorite moments from our Lancaster trip! Upload photos, view memories from fellow travelers, and relive the experience together.
+            </p>
+            
+            <Link 
+              href="/memories" 
+              className="btn btn-primary inline-flex items-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+              </svg>
+              Visit Photo Wall
+            </Link>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* Placeholder image frames */}
+            {[1, 2, 3, 4].map((item) => (
+              <div 
+                key={item}
+                className="aspect-square bg-white p-2 rounded-lg shadow-md transform transition-transform hover:rotate-2 hover:scale-105"
+              >
+                <div className="w-full h-full bg-gray-200 rounded flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

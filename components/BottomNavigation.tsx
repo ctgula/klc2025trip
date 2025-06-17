@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaHome, FaCalendarAlt, FaMapMarkedAlt, FaInfoCircle } from 'react-icons/fa';
+import { FaHome, FaCalendarAlt, FaMapMarkedAlt, FaInfoCircle, FaCamera } from 'react-icons/fa';
 
 const BottomNavigation = () => {
   const pathname = usePathname();
@@ -23,6 +23,11 @@ const BottomNavigation = () => {
       name: 'Destinations',
       href: '/destinations',
       icon: <FaMapMarkedAlt className="w-5 h-5" />,
+    },
+    {
+      name: 'Memories',
+      href: '/memories',
+      icon: <FaCamera className="w-5 h-5" />,
     },
     {
       name: 'Contact',

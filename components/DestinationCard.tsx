@@ -25,7 +25,8 @@ const DestinationCard = ({
   const [isExpanded, setIsExpanded] = useState(false);
   
   // Default placeholder image if none provided or if the image fails to load
-  const fallbackImage = "https://placehold.co/600x400/e2e8f0/64748b?text=" + encodeURIComponent(title);
+  // Using direct placeholder URLs for better reliability
+  const fallbackImage = `https://placehold.co/600x400/e2e8f0/64748b?text=${encodeURIComponent(title)}`;
   
   return (
     <motion.div 

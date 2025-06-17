@@ -77,7 +77,7 @@ const ItineraryPage = () => {
     }
   ];
 
-  // Bus 2 Timeline Data - Miller's / S&S
+  // Bus 2 Timeline Data - Miller's / Sight & Sound
   const bus2Timeline = [
     { 
       time: '9:00 AM', 

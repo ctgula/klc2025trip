@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@supabase/supabase-js/dist/module';
 
 // Check if Supabase environment variables are available
 export const demoMode = !process.env.NEXT_PUBLIC_SUPABASE_URL;

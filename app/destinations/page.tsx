@@ -89,7 +89,7 @@ const DestinationsPage = () => {
   const theatreFaqs = [
     {
       question: "What is the parking situation?",
-      answer: "Free parking is available in the Sight &amp; Sound Theatre parking lot. Accessible parking spaces are available near the entrance."
+      answer: "Free parking is available in the Sight & Sound Theatre parking lot. Accessible parking spaces are available near the entrance."
     },
     {
       question: "Is the theatre accessible?",
@@ -128,7 +128,7 @@ const DestinationsPage = () => {
           <DestinationCard
             title="Tanger Outlets"
             description="Shop at over 60 brand name outlet stores with great savings on designer fashions."
-            imageSrc="/images/destinations/tanger-outlets.jpg"
+            imageSrc="/images/destinations/tanger-outlets.webp"
             imageAlt="Tanger Outlets Lancaster"
             emoji="🛍️"
           >
@@ -167,7 +167,7 @@ const DestinationsPage = () => {
           <DestinationCard
             title="Miller's Smorgasbord"
             description="Enjoy authentic Pennsylvania Dutch cooking at this famous Lancaster County restaurant."
-            imageSrc="https://placehold.co/800x400/e2e8f0/4a6fa5?text=Miller's+Smorgasbord"
+            imageSrc="/images/destinations/millers-smorgasboard.jpg"
             imageAlt="Miller's Smorgasbord Restaurant"
             emoji="🍽️"
           >
@@ -206,7 +206,7 @@ const DestinationsPage = () => {
           <DestinationCard
             title="Amish Shops"
             description="Experience authentic Amish culture and craftsmanship at these local shops."
-            imageSrc="/images/destinations/amish-shops.jpg"
+            imageSrc="/images/destinations/amish-shops.jpeg"
             imageAlt="Amish Shops"
             emoji="🏪"
           >
@@ -223,11 +223,11 @@ const DestinationsPage = () => {
             </div>
           </DestinationCard>
 
-          {/* Sight &amp; Sound Theatre */}
+          {/* Sight & Sound Theatre */}
           <DestinationCard
             title="Sight & Sound Theatre"
             description="Experience the spectacular 'NOAH' show at this renowned theatre known for bringing Bible stories to life."
-            imageSrc="/images/destinations/sight-sound-theatre.jpg"
+            imageSrc="/images/destinations/sight-sound-noah.jpeg"
             imageAlt="Sight & Sound Theatre"
             emoji="🎭"
           >

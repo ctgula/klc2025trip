@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Photo } from './MemoriesPage';
 
 interface PhotoOfTheDayProps {
@@ -33,11 +34,16 @@ export default function PhotoOfTheDay({ photo }: PhotoOfTheDayProps) {
           {/* Pulse animation around the image */}
           <div className="absolute inset-0 rounded-xl pulse-animation"></div>
           
-          <img 
-            src={photo.url} 
-            alt={photo.caption}
-            className="w-full h-64 md:h-full object-cover"
-          />
+          <div className="relative w-full h-64 md:h-full">
+            <Image 
+              src={photo.url} 
+              alt={photo.caption}
+              className="object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
         </div>
         
         <div className="p-6 md:w-1/2 flex flex-col">

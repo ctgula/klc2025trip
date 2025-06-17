@@ -23,7 +23,7 @@ export default function MemoriesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   // Use our custom hooks for Supabase interactions and demo mode
-  const { isLoading, photos, error, fetchPhotos } = useSupabase();
+  const { isLoading, photos, error } = useSupabase();
   const { isDemoMode } = useDemoMode();
   
   // Show appropriate toast messages on component mount

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Photo } from './MemoriesPage';
 
 interface PhotoGalleryProps {
@@ -52,11 +53,13 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
         >
           {/* Photo */}
           <div className="aspect-square relative overflow-hidden">
-            <img 
+            <Image 
               src={photo.url} 
               alt={photo.caption}
-              className="w-full h-full object-cover rounded-t-xl"
-              loading="lazy"
+              className="object-cover rounded-t-xl"
+              fill
+              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+              priority={false}
             />
           </div>
           

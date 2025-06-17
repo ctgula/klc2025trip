@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

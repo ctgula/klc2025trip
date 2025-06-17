@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useSupabase } from '@/hooks/useSupabase';
 import { useDemoMode } from '@/context/DemoModeContext';
 
@@ -123,12 +124,16 @@ export default function PhotoUploadForm({ onClose, onUploadSuccess }: PhotoUploa
             >
               {file ? (
                 <div className="flex flex-col items-center">
-                  <img 
-                    src={URL.createObjectURL(file)} 
-                    alt="Preview" 
-                    className="h-40 object-contain mb-2"
-                  />
-                  <span className="text-sm text-gray-500">{file.name}</span>
+                  <div className="relative w-full h-48 mb-2">
+                    <Image 
+                      src={URL.createObjectURL(file)} 
+                      alt="Preview" 
+                      className="object-contain rounded-md"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 400px"
+                    />
+                  </div>
+                  <p className="text-sm text-gray-600">{file.name}</p>
                 </div>
               ) : (
                 <div className="py-4">

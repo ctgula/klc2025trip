@@ -23,7 +23,7 @@ export default function HomePage() {
               transition={{ duration: 0.5 }}
             >
               <div className="text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-blue-700">Kingdom Life Community Church &amp; Living Word International Christian Church</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-blue-700">Kingdom Life Community Church & Living Word International Christian Church</h2>
                 <p className="text-gray-600 text-sm mt-2">Present</p>
               </div>
             </motion.div>
@@ -46,14 +46,14 @@ export default function HomePage() {
                 This trip is hosted by Kingdom Life Community Church (KLCC) and Living Word International Christian Church (LWICC).
               </p>
               <p className="text-gray-700 mb-4">
-                We have planned a day filled with shopping, delicious food, and an amazing theatrical experience at the Sight &amp; Sound Theatre.
+                We have planned a day filled with shopping, delicious food, and an amazing theatrical experience at the Sight & Sound Theatre.
               </p>
               <p className="text-gray-700 mb-4">
                 We look forward to sharing this special day with you!
               </p>
               <p className="text-gray-700 font-medium">
                 Blessings,<br />
-                Kingdom Life Community Church &amp; Living Word International Christian Church
+                Kingdom Life Community Church & Living Word International Christian Church
               </p>
             </div>
             
@@ -85,7 +85,7 @@ export default function HomePage() {
             
             <div className="card p-6">
               <h3 className="text-xl font-semibold mb-3">Destinations</h3>
-              <p className="text-gray-600 mb-4">Explore the places we&apos;ll visit, including Tanger Outlets, Miller&apos;s Smorgasbord, Amish shops, and Sight &amp; Sound Theatre.</p>
+              <p className="text-gray-600 mb-4">Explore the places we&apos;ll visit, including Tanger Outlets, Miller&apos;s Smorgasbord, Amish shops, and Sight & Sound Theatre.</p>
               <Link href="/destinations" className="text-blue-600 hover:underline flex items-center gap-1">
                 Explore Destinations <FaArrowRight size={12} />
               </Link>

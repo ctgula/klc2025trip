@@ -128,7 +128,7 @@ const DestinationsPage = () => {
           <DestinationCard
             title="Tanger Outlets"
             description="Shop at over 60 brand name outlet stores with great savings on designer fashions."
-            imageSrc="https://placehold.co/800x400/e2e8f0/4a6fa5?text=Tanger+Outlets"
+            imageSrc="/images/destinations/tanger-outlets.jpg"
             imageAlt="Tanger Outlets Lancaster"
             emoji="🛍️"
           >
@@ -206,7 +206,7 @@ const DestinationsPage = () => {
           <DestinationCard
             title="Amish Shops"
             description="Experience authentic Amish culture and craftsmanship at these local shops."
-            imageSrc="https://placehold.co/800x400/e2e8f0/4a6fa5?text=Amish+Shops"
+            imageSrc="/images/destinations/amish-shops.jpg"
             imageAlt="Amish Shops"
             emoji="🏪"
           >
@@ -225,10 +225,10 @@ const DestinationsPage = () => {
 
           {/* Sight &amp; Sound Theatre */}
           <DestinationCard
-            title="Sight &amp; Sound Theatre"
+            title="Sight & Sound Theatre"
             description="Experience the spectacular 'NOAH' show at this renowned theatre known for bringing Bible stories to life."
-            imageSrc="https://placehold.co/800x400/e2e8f0/4a6fa5?text=Sight+%26+Sound+Theatre"
-            imageAlt="Sight &amp; Sound Theatre"
+            imageSrc="/images/destinations/sight-sound-theatre.jpg"
+            imageAlt="Sight & Sound Theatre"
             emoji="🎭"
           >
             <div className="space-y-4">

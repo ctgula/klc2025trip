@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-white tracking-wide border-b-2 border-blue-400 pb-2 inline-block">Kingdom Life Community Church <span className="text-blue-300">&amp;</span> Living Word International Christian Church</h3>
+              <h3 className="text-2xl font-bold text-white tracking-wide border-b-2 border-blue-400 pb-2 inline-block">Kingdom Life Community Church <span className="text-blue-300">&</span> Living Word International Christian Church</h3>
             </div>
             <p className="text-gray-300 mb-4">
               A one-day group trip to Lancaster, Pennsylvania, hosted by Kingdom Life Community Church (KLCC) and Living Word International Christian Church (LWICC).
@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
           <p>© {currentYear} Lancaster Trip Hub. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            An event by Kingdom Life Community Church &amp; Living Word International Christian Church (KLCC &amp; LWICC)
+            An event by Kingdom Life Community Church & Living Word International Christian Church (KLCC & LWICC)
           </p>
         </div>
       </div>

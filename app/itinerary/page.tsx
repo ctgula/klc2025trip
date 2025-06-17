@@ -16,12 +16,12 @@ import { motion } from 'framer-motion';
 const ItineraryPage = () => {
   // Tab state is managed internally by TabComponent
 
-  // Bus 1 Timeline Data - Tanger / Miller&apos;s / S&S
+  // Bus 1 Timeline Data - Tanger / Miller's / S&S
   const bus1Timeline = [
     { 
       time: '8:00 AM', 
       title: 'Depart Burtonsville', 
-      description: 'Depart Burtonsville Park &amp; Ride', 
+      description: 'Depart Burtonsville Park & Ride', 
       icon: <FaBus size={18} />,
       emoji: '🚌'
     },
@@ -55,7 +55,7 @@ const ItineraryPage = () => {
     },
     { 
       time: '2:00 PM', 
-      title: 'Depart for Sight &amp; Sound', 
+      title: 'Depart for Sight & Sound', 
       description: 'Leave for the theater show', 
       icon: <FaBus size={18} />,
       emoji: '🚌'
@@ -63,26 +63,26 @@ const ItineraryPage = () => {
     { 
       time: '3:00 PM', 
       title: 'NOAH Show', 
-      description: 'Experience the "NOAH" show at Sight &amp; Sound Theatre', 
+      description: 'Experience the "NOAH" show at Sight & Sound Theatre', 
       icon: <FaTheaterMasks size={18} />,
       emoji: '🎭'
     },
     { 
       time: '6:00 PM', 
       title: 'Return', 
-      description: 'Return to Burtonsville Park &amp; Ride', 
+      description: 'Return to Burtonsville Park & Ride', 
       icon: <FaHome size={18} />,
       emoji: '🚌',
       isLast: true
     }
   ];
 
-  // Bus 2 Timeline Data - Miller&apos;s / S&S
+  // Bus 2 Timeline Data - Miller's / S&S
   const bus2Timeline = [
     { 
       time: '9:00 AM', 
       title: 'Depart Burtonsville', 
-      description: 'Depart Burtonsville Park &amp; Ride', 
+      description: 'Depart Burtonsville Park & Ride', 
       icon: <FaBus size={18} />,
       emoji: '🚌'
     },
@@ -102,7 +102,7 @@ const ItineraryPage = () => {
     },
     { 
       time: '2:00 PM', 
-      title: 'Depart for Sight &amp; Sound', 
+      title: 'Depart for Sight & Sound', 
       description: 'Leave for the theater show', 
       icon: <FaBus size={18} />,
       emoji: '🚌'
@@ -110,14 +110,14 @@ const ItineraryPage = () => {
     { 
       time: '3:00 PM', 
       title: 'NOAH Show', 
-      description: 'Experience the "NOAH" show at Sight &amp; Sound Theatre', 
+      description: 'Experience the "NOAH" show at Sight & Sound Theatre', 
       icon: <FaTheaterMasks size={18} />,
       emoji: '🎭'
     },
     { 
       time: '6:00 PM', 
       title: 'Return', 
-      description: 'Return to Burtonsville Park &amp; Ride', 
+      description: 'Return to Burtonsville Park & Ride', 
       icon: <FaHome size={18} />,
       emoji: '🚌',
       isLast: true
@@ -132,7 +132,7 @@ const ItineraryPage = () => {
       children: (
         <div className="py-4">
           <h3 className="text-xl font-semibold mb-6 flex items-center">
-            <span className="mr-2 text-2xl">🚌</span> Bus 1 Schedule - Tanger / Miller&apos;s / S&amp;S
+            <span className="mr-2 text-2xl">🚌</span> Bus 1 Schedule - Tanger / Miller's / S&S
           </h3>
           <div className="pl-2 sm:pl-4">
             {bus1Timeline.map((item, index) => (
@@ -155,7 +155,7 @@ const ItineraryPage = () => {
       children: (
         <div className="py-4">
           <h3 className="text-xl font-semibold mb-6 flex items-center">
-            <span className="mr-2 text-2xl">🚌</span> Bus 2 Schedule - Miller&apos;s / S&amp;S
+            <span className="mr-2 text-2xl">🚌</span> Bus 2 Schedule - Miller's / S&S
           </h3>
           <div className="pl-2 sm:pl-4">
             {bus2Timeline.map((item, index) => (

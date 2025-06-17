@@ -100,7 +100,7 @@ export default function ClientHomePage() {
             
             <div className="card p-6">
               <h3 className="text-xl font-semibold mb-3">Destinations</h3>
-              <p className="text-gray-600 mb-4">Explore the places we&apos;ll visit, including Tanger Outlets, Miller&apos;s Smorgasbord, Amish shops, and Sight &amp; Sound Theatre.</p>
+              <p className="text-gray-600 mb-4">Explore the places we&apos;ll visit, including Tanger Outlets, Miller&apos;s Smorgasbord, Amish shops, and Sight & Sound Theatre.</p>
               <Link href="/destinations" className="text-blue-600 hover:underline flex items-center gap-1">
                 Explore Destinations <FaArrowRight size={12} />
               </Link>

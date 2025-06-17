@@ -25,12 +25,14 @@ export async function GET() {
     }
     
     // Create the table if it doesn't exist
-    const { error } = await supabase.rpc('create_photo_wall_table', {}, {
-      head: true, // We only need the status, not the response data
-    }).catch(async () => {
+    let error = null;
+    try {
+      const res = await supabase.rpc('create_photo_wall_table', {}, { head: true });
+      error = res.error;
+    } catch {
       // If the RPC doesn't exist, create the table directly with SQL
-      return await supabase.from('photo_wall').select('id').limit(1);
-    });
+      await supabase.from('photo_wall').select('id').limit(1);
+    }
     
     // If the table doesn't exist, create it
     if (error && error.code === '42P01') { // PostgreSQL error code for undefined_table

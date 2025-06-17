@@ -132,7 +132,7 @@ const ItineraryPage = () => {
       children: (
         <div className="py-4">
           <h3 className="text-xl font-semibold mb-6 flex items-center">
-            <span className="mr-2 text-2xl">🚌</span> Bus 1 Schedule - Tanger / Miller's / S&S
+            <span className="mr-2 text-2xl">🚌</span> Bus 1 Schedule - Tanger / Miller&apos;s / S&S
           </h3>
           <div className="pl-2 sm:pl-4">
             {bus1Timeline.map((item, index) => (
@@ -155,7 +155,7 @@ const ItineraryPage = () => {
       children: (
         <div className="py-4">
           <h3 className="text-xl font-semibold mb-6 flex items-center">
-            <span className="mr-2 text-2xl">🚌</span> Bus 2 Schedule - Miller's / S&S
+            <span className="mr-2 text-2xl">🚌</span> Bus 2 Schedule - Miller&apos;s / S&S
           </h3>
           <div className="pl-2 sm:pl-4">
             {bus2Timeline.map((item, index) => (

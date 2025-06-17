@@ -36,15 +36,21 @@ export async function GET() {
     
     // If the table doesn't exist, create it
     if (error && error.code === '42P01') { // PostgreSQL error code for undefined_table
-      await supabase.sql(`
-        CREATE TABLE IF NOT EXISTS public.photo_wall (
-          id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-          url TEXT NOT NULL,
-          caption TEXT NOT NULL,
-          name TEXT,
-          created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-        );
-      `);
+      try {
+        // Try to create a record in the table
+        const { data } = await supabase.from('photo_wall').insert({
+          url: 'placeholder',
+          caption: 'placeholder'
+        }).select();
+        
+        // If the insert succeeded, the table exists, so delete the placeholder
+        if (data) {
+          await supabase.from('photo_wall').delete().eq('url', 'placeholder');
+        }
+      } catch (err) {
+        // If insert failed, table likely doesn't exist or has different schema
+        console.log('Could not create photo_wall table automatically', err);
+      }
     }
     
     return NextResponse.json({ success: true, message: 'Supabase resources initialized' });

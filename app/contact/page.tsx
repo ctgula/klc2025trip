@@ -6,7 +6,6 @@ import {
   FaEnvelope, 
   FaPhone, 
   FaQuestionCircle, 
-  FaExclamationTriangle,
   FaUserFriends
 } from 'react-icons/fa';
 import AccordionItem from '../../components/AccordionItem';

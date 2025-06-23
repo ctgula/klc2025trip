@@ -124,7 +124,45 @@ const ItineraryPage = () => {
     }
   ];
 
-  // No drivers information needed
+  // Drivers Timeline Data - Miller's / Amish / S&S
+  const driversTimeline = [
+    { 
+      time: '12:00 PM', 
+      title: 'Miller\'s Smorgasbord', 
+      description: 'Lunch at Miller\'s Smorgasbord', 
+      icon: <FaUtensils size={18} />,
+      emoji: '🍽️'
+    },
+    { 
+      time: '12:45 PM', 
+      title: 'Amish Shopping', 
+      description: 'Shopping at the Amish markets', 
+      icon: <FaStore size={18} />,
+      emoji: '🛍️'
+    },
+    { 
+      time: '2:15 PM', 
+      title: 'Arrive at Sight & Sound', 
+      description: 'Arrive at Sight & Sound Theatre', 
+      icon: <FaBus size={18} />,
+      emoji: '🚌'
+    },
+    { 
+      time: '3:00 PM', 
+      title: 'NOAH Show', 
+      description: 'Experience the "NOAH" show at Sight & Sound Theatre', 
+      icon: <FaTheaterMasks size={18} />,
+      emoji: '🎭'
+    },
+    { 
+      time: '6:00 PM', 
+      title: 'Return', 
+      description: 'Depart for home', 
+      icon: <FaHome size={18} />,
+      emoji: '🚌',
+      isLast: true
+    }
+  ];
 
   const tabs = [
     {
@@ -159,6 +197,29 @@ const ItineraryPage = () => {
           </h3>
           <div className="pl-2 sm:pl-4">
             {bus2Timeline.map((item, index) => (
+              <TimelineItem
+                key={index}
+                time={item.time}
+                title={item.title}
+                description={item.description}
+                icon={item.icon}
+                emoji={item.emoji}
+                isLast={item.isLast}
+              />
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: 'Drivers',
+      children: (
+        <div className="py-4">
+          <h3 className="text-xl font-semibold mb-6 flex items-center">
+            <span className="mr-2 text-2xl">🚌</span> Drivers Schedule
+          </h3>
+          <div className="pl-2 sm:pl-4">
+            {driversTimeline.map((item, index) => (
               <TimelineItem
                 key={index}
                 time={item.time}

@@ -57,9 +57,13 @@ const TransportationPage = () => {
                 ></iframe>
               </div>
               
+              <div className="flex items-center text-gray-700 mb-2">
+                <FaClock className="mr-2 text-blue-600" />
+                <p><span className="font-medium">Bus 1 Check-in Time:</span> 7:30 AM - 7:50 AM</p>
+              </div>
               <div className="flex items-center text-gray-700">
                 <FaClock className="mr-2 text-blue-600" />
-                <p><span className="font-medium">Check-in Time:</span> 7:30 AM - 7:50 AM</p>
+                <p><span className="font-medium">Bus 2 Check-in Time:</span> 8:30 AM - 8:50 AM</p>
               </div>
             </div>
           </motion.div>
@@ -238,7 +242,7 @@ const TransportationPage = () => {
                 <div>
                   <h3 className="font-medium text-gray-800">Departure</h3>
                   <p className="text-gray-700">
-                    Buses will depart promptly at 8:00 AM. Please be on time as we cannot wait for late arrivals.
+                    Bus 1 will depart promptly at 8:00 AM. Bus 2 will depart promptly at 9:00 AM. Please be on time as we cannot wait for late arrivals.
                   </p>
                 </div>
               </li>
@@ -253,6 +257,7 @@ const TransportationPage = () => {
             <li>Each bus has a designated bus captain who will take attendance and provide information throughout the day.</li>
             <li>In case of emergency during the trip, contact your bus captain or one of the drivers.</li>
             <li>If you need to cancel your participation, please notify the organizers as soon as possible.</li>
+            <li>Refunds are not transferable.</li>
             <li>The buses will return to the Burtonsville Park-and-Ride at approximately 6:00 PM.</li>
             <li>In case of inclement weather, updates will be provided via email and text message.</li>
           </ul>

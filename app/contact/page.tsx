@@ -38,10 +38,7 @@ const ContactPage = () => {
       question: "Will there be restroom breaks during the bus ride?",
       answer: "The buses are equipped with onboard restrooms. Additionally, we will have brief stops at each destination where restroom facilities will be available."
     },
-    {
-      question: "Is there Wi-Fi on the bus?",
-      answer: "The buses are equipped with Wi-Fi, but connectivity may be limited in some areas during the journey. Please don't rely on it for important work or communications."
-    },
+
     {
       question: "What if I have dietary restrictions?",
       answer: "Miller's Smorgasbord offers a variety of options that can accommodate most dietary needs. If you have severe allergies or very specific dietary requirements, please contact us in advance so we can make appropriate arrangements."
@@ -51,28 +48,10 @@ const ContactPage = () => {
   // Organizer data
   const organizers = [
     {
-      name: "Pastor John Thompson",
-      role: "Trip Coordinator",
-      email: "pastor.john@kingdomlifechurch.org",
-      phone: "(301) 555-7890"
-    },
-    {
       name: "Andrea Thompson",
-      role: "Assistant Coordinator",
-      email: "andrea.t@kingdomlifechurch.org",
-      phone: "(301) 555-7891"
-    },
-    {
-      name: "Michael Williams",
-      role: "Bus 1 Captain",
-      email: "michael.w@kingdomlifechurch.org",
-      phone: "(301) 555-7892"
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Bus 2 Captain",
-      email: "sarah.j@kingdomlifechurch.org",
-      phone: "(301) 555-7893"
+      role: "Trip Organizer",
+      email: "mykingdomlifecommunitychurch@gmail.com",
+      phone: "(240) 483-8373"
     }
   ];
 
@@ -104,7 +83,7 @@ const ContactPage = () => {
                 <div className="bg-blue-100 p-3 rounded-full mr-4">
                   <FaUserFriends className="text-blue-600 text-xl" />
                 </div>
-                <h2 className="text-2xl font-semibold text-gray-800">Trip Organizers</h2>
+                <h2 className="text-2xl font-semibold text-gray-800">Trip Organizer</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -183,9 +162,7 @@ const ContactPage = () => {
                   <li>If separated from the group, call the emergency line</li>
                 </ol>
                 
-                <p className="text-sm text-gray-600 mt-4">
-                  Our trip leaders are trained in basic first aid, and we will have first aid kits available on each bus.
-                </p>
+
               </div>
             </div>
           </motion.div>
@@ -210,7 +187,7 @@ const ContactPage = () => {
               {faqs.map((faq, index) => (
                 <AccordionItem 
                   key={index} 
-                  title={faq.question}
+                  title={faq.question || ""}
                   isInitiallyOpen={index === 0}
                 >
                   <p>{faq.answer}</p>
@@ -220,48 +197,7 @@ const ContactPage = () => {
           </div>
         </motion.div>
 
-        {/* Church Information */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <motion.div 
-            className="bg-white rounded-xl shadow-md overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Kingdom Life Community Church</h3>
-              <div className="space-y-3 text-gray-700">
-                <p>10301 Harmony Place<br />Burtonsville, MD 20866</p>
-                <p>Sunday Service: 10:30 AM</p>
-                <p>
-                  <a href="https://www.kingdomlifechurch.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                    www.kingdomlifechurch.org
-                  </a>
-                </p>
-              </div>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="bg-white rounded-xl shadow-md overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Living Word International Church</h3>
-              <div className="space-y-3 text-gray-700">
-                <p>15520 Good Hope Road<br />Silver Spring, MD 20905</p>
-                <p>Sunday Service: 10:00 AM</p>
-                <p>
-                  <a href="https://www.livingwordinternational.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                    www.livingwordinternational.org
-                  </a>
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
+
       </div>
     </div>
   );

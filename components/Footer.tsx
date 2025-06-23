@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-white tracking-wide border-b-2 border-blue-400 pb-2 inline-block">Kingdom Life Community Church <span className="text-blue-300">&</span> Living Word International Christian Church</h3>
+              <h3 className="text-2xl font-bold text-white tracking-wide border-b-2 border-blue-400 pb-2 inline-block">Kingdom Life Community Church</h3>
             </div>
             <p className="text-gray-300 mb-4">
-              A one-day group trip to Lancaster, Pennsylvania, hosted by Kingdom Life Community Church (KLCC) and Living Word International Christian Church (LWICC).
+              A one-day group trip to Lancaster, Pennsylvania, hosted by Kingdom Life Community Church (KLCC).
             </p>
           </div>
           
@@ -50,8 +50,8 @@ const Footer = () => {
                 <h4 className="font-medium text-white mb-2">Kingdom Life Community Church (KLCC)</h4>
                 <p className="flex items-center text-gray-300">
                   <FaEnvelope className="mr-2" />
-                  <a href="mailto:info@kingdomlifecc.org" className="hover:text-white transition-colors">
-                    info@kingdomlifecc.org
+                  <a href="mailto:mykingdomlifecommunitychurch@gmail.com" className="hover:text-white transition-colors">
+                    mykingdomlifecommunitychurch@gmail.com
                   </a>
                 </p>
                 <p className="text-gray-300 mt-2">
@@ -64,19 +64,7 @@ const Footer = () => {
                 </p>
               </div>
               
-              <div>
-                <h4 className="font-medium text-white mb-2">Living Word International Christian Church (LWICC)</h4>
-                <p className="flex items-center text-gray-300">
-                  <FaEnvelope className="mr-2" />
-                  <a href="mailto:info@lwicc.org" className="hover:text-white transition-colors">
-                    info@lwicc.org
-                  </a>
-                </p>
-                <p className="text-gray-300 mt-2">
-                  16819 New Hampshire Ave<br />
-                  Silver Spring, MD 20905
-                </p>
-              </div>
+
             </div>
           </div>
         </div>
@@ -84,7 +72,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
           <p>© {currentYear} Lancaster Trip Hub. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            An event by Kingdom Life Community Church & Living Word International Christian Church (KLCC & LWICC)
+            An event by Kingdom Life Community Church (KLCC)
           </p>
         </div>
       </div>

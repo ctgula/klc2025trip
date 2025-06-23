@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Lancaster Summer Family Trip - July 12, 2025",
-  description: "A hub for the Lancaster, PA trip organized by Kingdom Life Community Church and Living Word International Church",
+  description: "A hub for the Lancaster, PA trip organized by Kingdom Life Community Church",
 };
 
 export default function RootLayout({

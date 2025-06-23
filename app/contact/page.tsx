@@ -113,59 +113,13 @@ const ContactPage = () => {
               
               <div className="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
                 <p className="text-gray-700">
-                  For general inquiries about the trip, please email <a href="mailto:lancaster2025@kingdomlifechurch.org" className="text-blue-600 font-medium">lancaster2025@kingdomlifechurch.org</a>
+                  For general inquiries about the trip, please email <a href="mailto:mykingdomlifecommunitychurch@gmail.com" className="text-blue-600 font-medium">mykingdomlifecommunitychurch@gmail.com</a>
                 </p>
               </div>
             </div>
           </motion.div>
 
-          {/* Emergency Contact */}
-          <motion.div 
-            className="bg-white rounded-xl shadow-md overflow-hidden"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="p-6">
-              <div className="flex items-center mb-4">
-                <div className="bg-red-100 p-3 rounded-full mr-4">
-                  <FaExclamationTriangle className="text-red-600 text-xl" />
-                </div>
-                <h2 className="text-xl font-semibold text-gray-800">Emergency Contact</h2>
-              </div>
-              
-              <div className="bg-red-50 border border-red-100 rounded-lg p-4 mb-4">
-                <h3 className="font-medium text-red-800 mb-2">During the Trip</h3>
-                <p className="text-gray-700 mb-3">
-                  If you need immediate assistance during the trip, please contact:
-                </p>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center">
-                    <FaPhone className="text-red-600 mr-2" />
-                    <a href="tel:+13015559999" className="text-gray-800 font-medium">
-                      Emergency Line: (301) 555-9999
-                    </a>
-                  </div>
-                  
-                  <p className="text-sm text-gray-600">
-                    This number will be monitored throughout the trip by our coordinators.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <h3 className="font-medium text-gray-800">In Case of Medical Emergency</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-gray-700">
-                  <li>Call 911 if it&apos;s a life-threatening situation</li>
-                  <li>Notify your bus captain immediately</li>
-                  <li>If separated from the group, call the emergency line</li>
-                </ol>
-                
 
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         {/* FAQ Accordion */}

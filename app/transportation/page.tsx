@@ -195,7 +195,7 @@ const TransportationPage = () => {
                 <div>
                   <h3 className="font-medium text-gray-800">Arrival</h3>
                   <p className="text-gray-700">
-                    Bus 1 arrives at 7:30 AM. Bus 2 arrives at 8:30 AM at the Burtonsville Park-and-Ride.
+                    Bus 1 guests arrive at 7:30 AM. Bus 2 guests arrive at 8:30 AM at the Burtonsville Park-and-Ride.
                   </p>
                 </div>
               </li>

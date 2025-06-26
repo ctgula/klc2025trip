@@ -270,8 +270,7 @@ const ItineraryPage = () => {
               'Please arrive 30 minutes before departure time for check-in',
               'Bring comfortable walking shoes',
               'The bus will depart promptly at the scheduled time',
-              'Each person is responsible for being at the meeting points on time',
-              'In case of emergency, contact your driver'
+              'Each person is responsible for being at the meeting points on time'
             ].map((note, index) => (
               <motion.li 
                 key={index} 

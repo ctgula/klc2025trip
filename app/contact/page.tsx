@@ -15,7 +15,7 @@ const ContactPage = () => {
   const faqs = [
     {
       question: "What time should I arrive for check-in?",
-      answer: "Please arrive by 7:30 AM at the Burtonsville Park-and-Ride. Check-in will close at 7:50 AM, and buses will depart promptly at 8:00 AM."
+      answer: "Bus 1 guests should arrive at 7:30 am at the Burtonsville Park-and-Ride. Bus 2 guests should arrive at 8:30 am."
     },
     {
       question: "What should I bring on the trip?",
@@ -29,10 +29,7 @@ const ContactPage = () => {
       question: "Can I bring children on this trip?",
       answer: "Yes, children are welcome! However, please note that this is a full-day event with significant walking. Children must be supervised by their parents or guardians at all times."
     },
-    {
-      question: "What if I need to cancel my registration?",
-      answer: "If you need to cancel, please contact the trip organizers as soon as possible. Refunds may be available depending on when you cancel and if we can fill your spot from the waiting list."
-    },
+
     {
       question: "Will there be restroom breaks during the bus ride?",
       answer: "The buses are equipped with onboard restrooms. Additionally, we will have brief stops at each destination where restroom facilities will be available."

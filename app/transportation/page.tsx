@@ -57,14 +57,7 @@ const TransportationPage = () => {
                 ></iframe>
               </div>
               
-              <div className="flex items-center text-gray-700 mb-2">
-                <FaClock className="mr-2 text-blue-600" />
-                <p><span className="font-medium">Bus 1 Check-in Time:</span> 7:30 AM - 7:50 AM</p>
-              </div>
-              <div className="flex items-center text-gray-700">
-                <FaClock className="mr-2 text-blue-600" />
-                <p><span className="font-medium">Bus 2 Check-in Time:</span> 8:30 AM - 8:50 AM</p>
-              </div>
+              {/* Check-in times removed as requested */}
             </div>
           </motion.div>
 
@@ -202,7 +195,7 @@ const TransportationPage = () => {
                 <div>
                   <h3 className="font-medium text-gray-800">Arrival</h3>
                   <p className="text-gray-700">
-                    Arrive at the Burtonsville Park-and-Ride by 7:30 AM to allow sufficient time for check-in.
+                    Arrive at the Burtonsville Park-and-Ride by 7:30 AM to allow sufficient time for check-in. Arrival time for Bus #2: 9:00 am.
                   </p>
                 </div>
               </li>

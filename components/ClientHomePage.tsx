@@ -28,8 +28,7 @@ export default function ClientHomePage() {
                     <Image src="/klc logo.jpeg" alt="Kingdom Life Community Church logo" width={120} height={120} className="object-contain rounded-full" priority />
                   </div>
                 </div>
-                <h2 className="text-xl md:text-2xl font-bold text-blue-700">Kingdom Life Community Church</h2>
-                <p className="text-gray-600 text-sm mt-1">Present</p>
+                <h2 className="text-xl md:text-2xl font-bold text-blue-700">Kingdom Life Community Church Presents...</h2>
               </div>
             </motion.div>
             

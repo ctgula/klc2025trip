@@ -6,10 +6,17 @@ import toast from 'react-hot-toast';
 import { useDemoMode } from '@/context/DemoModeContext';
 
 // Types
+// Note: FileObject interface is used for type consistency with StoragePhotoGallery
 interface FileObject {
   name: string;
   size: number;
   type: string;
+}
+
+// Error type for better type safety
+interface UploadError {
+  message: string;
+  status?: number;
 }
 
 const PhotoUploader = () => {
@@ -96,9 +103,10 @@ const PhotoUploader = () => {
       // Reset the file input
       if (fileInputRef.current) fileInputRef.current.value = '';
       
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const uploadError = error as UploadError;
       console.error('Error uploading file:', error);
-      toast.error(`Upload failed: ${error.message || 'Unknown error'}`);
+      toast.error(`Upload failed: ${uploadError.message || 'Unknown error'}`);
     } finally {
       setIsUploading(false);
       setUploadProgress(0);

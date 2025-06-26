@@ -2,12 +2,14 @@
 
 import React from 'react';
 import { Toaster } from 'react-hot-toast';
-import { useDemoMode } from '@/context/DemoModeContext';
-import DemoModeToggle from '@/components/DemoModeToggle';
-import StoragePhotoGallery from '@/components/StoragePhotoGallery';
-import PhotoUploader from '@/components/PhotoUploader';
+import { useDemoMode } from '../../context/DemoModeContext';
+import DemoModeToggle from '../../components/DemoModeToggle';
+import StoragePhotoGallery from '../../components/StoragePhotoGallery';
+import PhotoUploader from '../../components/PhotoUploader';
 
 export default function PhotoWallPage() {
+  // Use the demo mode context to ensure the hook is used
+  const { isDemoMode } = useDemoMode();
   return (
     <div className="container-custom py-10">
       <Toaster position="top-center" />

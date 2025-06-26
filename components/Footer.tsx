@@ -55,7 +55,7 @@ const Footer = () => {
                   </a>
                 </p>
                 <p className="text-gray-300 mt-2">
-                  Meets Sunday mornings at Bel Pre Elementary School<br />
+                  Join us for Sunday worship at Bel Pre Elementary School<br />
                   13801 Rippling Brook Dr<br />
                   Silver Spring, MD
                 </p>

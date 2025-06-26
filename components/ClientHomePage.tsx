@@ -48,7 +48,7 @@ export default function ClientHomePage() {
               </p>
               <p className="text-gray-700 mb-4">
                 We are excited to invite you to join us for a wonderful day trip to Lancaster, Pennsylvania. 
-                This trip is hosted by Kingdom Life Community Church (KLCC) and Living Word International Christian Church (LWICC).
+                This trip is hosted by Kingdom Life Community Church (KLCC).
               </p>
               <p className="text-gray-700 mb-4">
                 We have planned a day filled with shopping, delicious food, and an amazing theatrical experience at the Sight &amp; Sound Theatre.
@@ -59,7 +59,7 @@ export default function ClientHomePage() {
               <p className="text-gray-700 font-medium">
                 Blessings,<br />
                 Pastor John &amp; Andrea Thompson<br />
-                Kingdom Life Community Church &amp; Living Word International Christian Church
+                Kingdom Life Community Church
               </p>
             </div>
             
@@ -117,44 +117,7 @@ export default function ClientHomePage() {
         </div>
       </section>
       
-      {/* Memories & Reflections Section */}
-      <section className="py-16 bg-blue-50">
-        <div className="container-custom">
-          <h2 className="section-title text-center mb-8">Memories & Reflections</h2>
-          
-          <div className="max-w-3xl mx-auto text-center mb-8">
-            <p className="text-lg text-gray-700 mb-6">
-              Share your favorite moments from our Lancaster trip! Upload photos, view memories from fellow travelers, and relive the experience together.
-            </p>
-            
-            <Link 
-              href="/memories" 
-              className="btn btn-primary inline-flex items-center gap-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
-              </svg>
-              Visit Photo Wall
-            </Link>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {/* Placeholder image frames */}
-            {[1, 2, 3, 4].map((item) => (
-              <div 
-                key={item}
-                className="aspect-square bg-white p-2 rounded-lg shadow-md transform transition-transform hover:rotate-2 hover:scale-105"
-              >
-                <div className="w-full h-full bg-gray-200 rounded flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* End of Quick Info Section */}
     </div>
   );
 }

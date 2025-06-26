@@ -78,14 +78,14 @@ const ContactPage = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <div className="p-6">
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-6 justify-center">
                 <div className="bg-blue-100 p-3 rounded-full mr-4">
                   <FaUserFriends className="text-blue-600 text-xl" />
                 </div>
                 <h2 className="text-2xl font-semibold text-gray-800">Trip Organizer</h2>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-6 max-w-md mx-auto">
                 {organizers.map((organizer, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4">
                     <h3 className="font-medium text-gray-800 text-lg mb-1">{organizer.name}</h3>
@@ -110,7 +110,7 @@ const ContactPage = () => {
                 ))}
               </div>
               
-              <div className="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
+              <div className="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-100 text-center">
                 <p className="text-gray-700">
                   For general inquiries about the trip, please email <a href="mailto:mykingdomlifecommunitychurch@gmail.com" className="text-blue-600 font-medium">mykingdomlifecommunitychurch@gmail.com</a>
                 </p>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { DemoModeProvider } from '@/context/DemoModeContext';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ClientBottomNavigation from "../components/ClientBottomNavigation";
@@ -24,12 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <DemoModeProvider>
-          <Navbar />
-          <main className="min-h-screen pt-16 pb-16 md:pb-0">{children}</main>
-          <ClientBottomNavigation />
-          <Footer />
-        </DemoModeProvider>
+        <Navbar />
+        <main className="min-h-screen pt-16 pb-16 md:pb-0">{children}</main>
+        <ClientBottomNavigation />
+        <Footer />
       </body>
     </html>
   );

@@ -259,7 +259,6 @@ const TransportationPage = () => {
             <li>If you need to cancel your participation, please notify the organizers as soon as possible.</li>
             <li>Refunds are not transferable.</li>
             <li>The buses will return to the Burtonsville Park-and-Ride at approximately 6:00 PM.</li>
-            <li>In case of inclement weather, updates will be provided via email and text message.</li>
           </ul>
         </div>
       </div>

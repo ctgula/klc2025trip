@@ -25,11 +25,6 @@ const BottomNavigation = () => {
       icon: <FaMapMarkedAlt className="w-5 h-5" />,
     },
     {
-      name: 'Memories',
-      href: '/memories',
-      icon: <FaCamera className="w-5 h-5" />,
-    },
-    {
       name: 'Contact',
       href: '/contact',
       icon: <FaInfoCircle className="w-5 h-5" />,

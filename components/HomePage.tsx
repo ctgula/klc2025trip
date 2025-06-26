@@ -23,7 +23,7 @@ export default function HomePage() {
               transition={{ duration: 0.5 }}
             >
               <div className="text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-blue-700">Kingdom Life Community Church & Living Word International Christian Church</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-blue-700">Kingdom Life Community Church</h2>
                 <p className="text-gray-600 text-sm mt-2">Present</p>
               </div>
             </motion.div>
@@ -43,7 +43,7 @@ export default function HomePage() {
               </p>
               <p className="text-gray-700 mb-4">
                 We are excited to invite you to join us for a wonderful day trip to Lancaster, Pennsylvania. 
-                This trip is hosted by Kingdom Life Community Church (KLCC) and Living Word International Christian Church (LWICC).
+                This trip is hosted by Kingdom Life Community Church (KLCC).
               </p>
               <p className="text-gray-700 mb-4">
                 We have planned a day filled with shopping, delicious food, and an amazing theatrical experience at the Sight & Sound Theatre.
@@ -53,7 +53,7 @@ export default function HomePage() {
               </p>
               <p className="text-gray-700 font-medium">
                 Blessings,<br />
-                Kingdom Life Community Church & Living Word International Christian Church
+                Kingdom Life Community Church
               </p>
             </div>
             

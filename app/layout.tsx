@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ClientBottomNavigation from "../components/ClientBottomNavigation";
-import { DemoModeProvider } from "../context/DemoModeContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,12 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <DemoModeProvider>
-          <Navbar />
-          <main className="min-h-screen pt-16 pb-16 md:pb-0">{children}</main>
-          <ClientBottomNavigation />
-          <Footer />
-        </DemoModeProvider>
+        <Navbar />
+        <main className="min-h-screen pt-16 pb-16 md:pb-0">{children}</main>
+        <ClientBottomNavigation />
+        <Footer />
       </body>
     </html>
   );

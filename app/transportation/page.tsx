@@ -195,7 +195,7 @@ const TransportationPage = () => {
                 <div>
                   <h3 className="font-medium text-gray-800">Arrival</h3>
                   <p className="text-gray-700">
-                    Arrive at the Burtonsville Park-and-Ride by 7:30 AM to allow sufficient time for check-in. Arrival time for Bus #2: 9:00 am.
+                    Bus 1 arrives at 7:30 AM. Bus 2 arrives at 8:30 AM at the Burtonsville Park-and-Ride.
                   </p>
                 </div>
               </li>
@@ -250,7 +250,6 @@ const TransportationPage = () => {
             <li>Each bus has a designated bus captain who will take attendance and provide information throughout the day.</li>
             <li>In case of emergency during the trip, contact your bus captain or one of the drivers.</li>
             <li>If you need to cancel your participation, please notify the organizers as soon as possible.</li>
-            <li>Refunds are not transferable.</li>
             <li>The buses will return to the Burtonsville Park-and-Ride at approximately 6:00 PM.</li>
           </ul>
         </div>
